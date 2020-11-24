@@ -1,7 +1,7 @@
 # mm-lithography (mm = Micro-Manager)
  Control software for automated lithography on an inverted microscope using the Micro-Manager API.
 
-![GUI](static/gui-sreenshot.png)
+![GUI](https://github.com/FerdinandGreiss/mm-lithography/blob/main/static/gui-screenshot.png)
 
 Hope this piece of software might be of use for others as well. The file 
 is currently in a very simple organization. A single Python file generates 
