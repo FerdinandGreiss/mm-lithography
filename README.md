@@ -14,6 +14,10 @@ acquired image to make sure the spots for exposure are aligned nicely with
 the actual features. Each point is then scanned sequentially with the 
 installed XY stage and exposed with light for a user-specified duration.
 
+The txt file can be generated with different software. In the */static* folder, there is 
+a lisp file that can extract positions from AutoCAD files and save them as text file
+in the correct formatting.
+
 + Inverted microscope configured with the famous Micro-Manager 
 + Python-based control software
 + Arduino software
