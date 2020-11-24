@@ -1,0 +1,22 @@
+(defun c:cdb()
+(setq mysset (ssget '((0 . "CIRCLE"))))
+(setq mylength (sslength mysset))
+(setq counter 0)
+(setq MyFile (open "/Users/feschiessl/Dropbox/hardware-control/position-folder/brush_design.txt" "w"))
+
+(write-line "X\t\tY\t\tZ" MyFile) 
+(write-line "\n" MyFile)
+
+(while (< counter mylength)
+(setq obj (ssname mysset counter))
+(setq data (entget obj))
+(setq rdata (assoc 10 data))
+
+(setq xs (rtos (setq xdata (cadr rdata))))
+(setq ys (rtos (setq ydata (caddr rdata))))
+(setq zs (rtos (setq zdata (cadddr rdata))))
+(write-line (strcat "\n" xs "\t\t" ys "\t\t" zs) MyFile) 
+(setq counter (+ 1 counter))
+)
+(close MyFile)
+)
