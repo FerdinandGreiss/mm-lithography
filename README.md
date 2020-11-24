@@ -6,9 +6,9 @@
 Hope this piece of software might be of use for others as well. The file 
 is currently in a very simple organization. A single Python file generates 
 the logic and imports hardware settings. The hardware configuration file 
-generated with the Micro-Manager setup wizard. 
+is generated with the Micro-Manager setup wizard. 
 
-Once "mm-gui.py" is running, you can choose a txt file to import the positions 
+Once *mm-gui.py* is running, you can choose a txt file to import the positions 
 that you want to expose. The defined positions map is superimposed onto the 
 acquired image to make sure the spots for exposure are aligned nicely with 
 the actual features. Each point is then scanned sequentially with the 
@@ -29,5 +29,5 @@ Necessary hardware:
 
 Optional hardware:
 -------------------
-+ Arduino that triggers an external shutter to control the light exposure. The Arduino is programmed with "micromanager.ino". 
++ Arduino that triggers an external shutter to control the light exposure. The Arduino is programmed with *micromanager.ino*. 
 
